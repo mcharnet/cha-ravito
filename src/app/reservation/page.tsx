@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import Reservation from '@/components/Reservation';
 import Footer from '@/components/Footer';
 
-export default function Home() {
+export default function ReservationPage() {
   return (
     <main>
       <Header />
-      <Hero />
+      <Reservation />
       <Footer />
     </main>
   );
-}
+} 

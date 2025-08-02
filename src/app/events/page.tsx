@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import EventsWithSanity from '@/components/EventsWithSanity';
 import Footer from '@/components/Footer';
 
-export default function Home() {
+export default function EventsPage() {
   return (
     <main>
       <Header />
-      <Hero />
+      <EventsWithSanity />
       <Footer />
     </main>
   );
-}
+} 

@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import ClickAndCollect from '@/components/ClickAndCollect';
 import Footer from '@/components/Footer';
 
-export default function Home() {
+export default function ClickAndCollectPage() {
   return (
     <main>
       <Header />
-      <Hero />
+      <ClickAndCollect />
       <Footer />
     </main>
   );
-}
+} 
