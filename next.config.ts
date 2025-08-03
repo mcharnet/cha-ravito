@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  // Configuration pour améliorer l'hydratation
+  reactStrictMode: true,
   // Désactiver Turbopack temporairement pour éviter les problèmes PostCSS
   // webpack: (config) => {
   //   return config;

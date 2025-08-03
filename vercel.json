@@ -6,7 +6,7 @@
   "devCommand": "npm run dev",
   "regions": ["cdg1"],
   "functions": {
-    "app/**/*.tsx": {
+    "src/app/**/*.tsx": {
       "maxDuration": 30
     }
   },
@@ -25,6 +25,10 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
         }
       ]
     },
@@ -36,6 +40,23 @@
           "value": "no-cache, no-store, must-revalidate"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/studio",
+      "destination": "/studio/desk",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/api/robots"
     }
   ]
 } 
